@@ -36,4 +36,6 @@ Route::get('/home/add', [PlateController::class, 'store'])->name('store');
 // Route::get('/admin', [PlateController::class, 'index'])->name('home');
 Route::get('/add', [PlateController::class, 'home'])->name('add');
 
+route::get('/update',[PlateController::class , 'update'])->name('update');
+
 require __DIR__.'/auth.php';
